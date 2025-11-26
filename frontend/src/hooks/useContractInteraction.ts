@@ -1,7 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import { ethers } from 'ethers';
 import { getAttendanceService } from '../services/attendanceService';
-import type { StudentData, AttendanceRecord } from '../contracts/config';
 
 export const useContractRead = <T,>(
   fn: () => Promise<T>,
